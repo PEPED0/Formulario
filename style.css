@@ -1,0 +1,89 @@
+/* Reset básico e estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    color: rgb(9, 105, 4);
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; /* Ajuste a largura conforme necessário */
+    padding-top: 10%; /* Ajuste a margem superior conforme necessário */
+}
+
+.titulo, #subtitulo {
+    font-family: sans-serif;
+    color: black;
+    margin-left: 10%;
+}
+
+fieldset {
+    border: 1px solid;
+    padding: 10px; /* Adicione um espaçamento interno */
+    margin-bottom: 1em; /* Espaçamento inferior */
+}
+
+input, select, textarea, button {
+    border-radius: 20px;
+    padding: 0.5em;
+    border: 1px solid #585858;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+    width: 100%; /* Ocupa toda a largura do pai */
+    margin-bottom: 1em; /* Espaçamento inferior */
+}
+
+input:focus, select:focus, textarea:focus {
+    background: #D3D3D3;
+}
+
+.butao {
+    font-size: 1.2em; /* Corrigido o tamanho da fonte */
+    background: #d7711279;
+    border: none; /* Corrigido a propriedade border */
+    color: #c51d114d;
+    padding: 0.5em 1em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.butao:hover {
+    background: #a4161b;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+.butao select {
+    cursor: pointer;
+}
+
+/* Classes adicionais */
+.campo {
+    margin-bottom: 1em; /* Ajuste conforme necessário */
+}
+
+.grupo .class {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo select,
+.campo textarea {
+    /* Pode ajustar o estilo conforme necessário */
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+/* Estilos específicos */
+#body {
+    justify-content: center; /* Certifique-se de que o pai tenha display: flex; se usar justify-content */
+}
